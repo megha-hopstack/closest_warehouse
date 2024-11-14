@@ -1,0 +1,7 @@
+# Ignore the .env file with sensitive information
+.env
+
+# Ignore other common files and folders
+__pycache__/          # Python bytecode files
+*.pyc                 # Python compiled files
+.DS_Store             # macOS system files
