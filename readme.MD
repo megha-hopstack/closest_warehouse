@@ -41,7 +41,7 @@ from_address: A list of warehouse addresses, each with a warehouse_name and addr
 Example request body:
 
 json
-Copy code
+
 {
    "to_address": "1600 Amphitheatre Parkway, Mountain View, CA",
    "from_address": [
@@ -55,19 +55,19 @@ Copy code
      }
    ]
 }
+
 Response
 Success: Returns the closest warehouse if all addresses are valid.
 Error: Returns closest_warehouse as null with details on any invalid or missing addresses.
 Example success response:
 
-json
-Copy code
 {
   "closest_warehouse": {
     "warehouse_name": "WH1",
     "address": "1 Infinite Loop, Cupertino, CA"
   }
 }
+
 Running Tests
 Use tools like Postman or curl to test the endpoint at http://localhost:8000/closest-warehouse/.
 
